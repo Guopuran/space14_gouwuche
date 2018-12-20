@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <guopuran.bwie.com.space14.custom.CustomTitle
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        ></guopuran.bwie.com.space14.custom.CustomTitle>
+    <TextView
+        android:id="@+id/main_faxian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="搜索发现"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_title"
+        />
+    <guopuran.bwie.com.space14.custom.CustomView
+        android:id="@+id/main_liushi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/main_faxian"
+        ></guopuran.bwie.com.space14.custom.CustomView>
+    <TextView
+        android:id="@+id/main_lishi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="搜索历史"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_liushi"
+        />
+    <guopuran.bwie.com.space14.custom.CustomView
+        android:id="@+id/main_liushi2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_lishi"
+        ></guopuran.bwie.com.space14.custom.CustomView>
+</android.support.constraint.ConstraintLayout>
